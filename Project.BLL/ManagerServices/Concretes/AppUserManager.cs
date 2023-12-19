@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace Project.BLL.ManagerServices.Concretes
 {
-    public class AppUserManger : BaseManager<AppUser>, IAppUserManager
+    public class AppUserManager : BaseManager<AppUser>, IAppUserManager
     {
         IAppUserRepository _apRep;
-        public AppUserManger(IAppUserRepository apRep) : base(apRep)
+        public AppUserManager(IAppUserRepository apRep) : base(apRep)
         {
             _apRep = apRep;
         }

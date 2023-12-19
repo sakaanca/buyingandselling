@@ -11,10 +11,17 @@ namespace Project.BLL.ManagerServices.Concretes
 {
     public class AppUserProfileManager : BaseManager<AppUserProfile>, IAppUserProfileManager
     {
-        IAppUserProfileManager _proRep;
+
+        IAppUserProfileRepository _proRep;
+
         public AppUserProfileManager(IAppUserProfileRepository proRep) : base(proRep)
+
         {
+
             _proRep = proRep;
+
         }
+
     }
+
 }

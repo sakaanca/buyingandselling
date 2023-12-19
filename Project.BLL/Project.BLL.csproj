@@ -7,13 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="..\Project.DAL\Project.DAL.csproj">
-		  <PrivateAssets>All</PrivateAssets>
-	  </ProjectReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DependencyResolvers\" />
+	  <ProjectReference Include="..\Project.DAL\Project.DAL.csproj">
+		  <PrivateAssets>All</PrivateAssets>
+	  </ProjectReference>
   </ItemGroup>
 
 </Project>
