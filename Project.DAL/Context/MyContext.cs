@@ -27,8 +27,10 @@ namespace Project.DAL.Context
             base.OnModelCreating(builder);
             builder.ApplyConfiguration(new AppUserConfiguration());
             builder.ApplyConfiguration(new AppUserProfileConfiguration());
+
             builder.ApplyConfiguration(new CategoryConfiguration());
             builder.ApplyConfiguration(new ProductConfiguration());
+
             builder.ApplyConfiguration(new OrderConfiguration());
             builder.ApplyConfiguration(new OrderDetailConfiguration());
         }

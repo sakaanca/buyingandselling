@@ -17,7 +17,7 @@ namespace Project.BLL.ManagerServices.Concretes
             _apRep = apRep;
         }
 
-        public async Task<bool> CreateUser(AppUser item)
+        public async Task<bool> CreateUserAsync(AppUser item)
         {
             //todo : Blyazılır 
             return await _apRep.AddUser(item);

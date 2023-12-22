@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿  using Microsoft.AspNetCore.Identity;
 using Project.DAL.Context;
 using Project.DAL.Repositories.Abstracts;
 using Project.ENTITIES.Models;
@@ -24,6 +24,11 @@ namespace Project.DAL.Repositories.Concretes
         {
             IdentityResult result = await _userManager.CreateAsync(item, item.PasswordHash);
             if (result.Succeeded) return true;
+            //List<IdentityError> errors = new List<IdentityError>();
+            //foreach (IdentityError error in result.Errors)
+            //{
+            //    errors.Add(error);
+            //}
             return false;
         }
 
